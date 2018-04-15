@@ -1,0 +1,25 @@
+<div ng-show="isLoading == false">
+
+    <div class="input-group">
+        <input type="text"
+               class="form-control col-sm-4 margin-24 height-42"
+               placeholder="Please enter station name"
+               ng-model="stationName"
+        />
+        <input type="text"
+               class="form-control col-sm-4 margin-24 height-42"
+               placeholder="Please enter radius in km"
+               ng-model="radius"
+        />
+        <button type="button"
+                class="btn btn-primary col-sm-2 margin-24 height-42"
+                ng-click="zoomMap()">Find</button>
+    </div>
+    <ng-map zoom="11" center="New york city" style="display:block; width:auto;height: 500px;">
+        <marker ng-repeat="pin in ::data" position="{{pin.lat}},{{pin.lon}}" title="{{pin.name}}" icon="{{pin.icon}}"></marker>
+    </ng-map>
+</div>
+
+<div ng-show="isLoading">
+    <i class="icon-loader spin">Loading…</i>
+</div>

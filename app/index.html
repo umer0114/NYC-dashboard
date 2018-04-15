@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="dashboard" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="dashboard" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="dashboard" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="dashboard" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#!/view1">Map view</a></li>
+    <li><a href="#!/view2">Current usage</a></li>
+    <li><a href="#!/view3">Historic usage</a></li>
+  </ul>
+  <div ng-view></div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCjQV3SE2IdaZv_1HAFnKaQUtQEFy6h4_4"></script>
+  <script type='text/javascript' src="bower_components/ngmap/build/scripts/ng-map.min.js"></script>
+  <script type='text/javascript' src="bower_components/lodash/dist/lodash.min.js"></script>
+  <script src="app.js"></script>
+  <script src="route.js"></script>
+  <script src="sharedService.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="view3/view3.js"></script>
+  <script src="bower_components/chart.js/dist/Chart.min.js"></script>
+  <script src="bower_components/angular-bootstrap//ui-bootstrap.min.js"></script>
+  <script src="bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
+</body>
+</html>

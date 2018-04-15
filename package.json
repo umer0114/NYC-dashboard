@@ -1,0 +1,26 @@
+{
+  "name": "NYC-dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Mapping and analysis of NYC bikes",
+  "repository": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "http-server": "^0.9.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.8",
+    "karma-junit-reporter": "^0.4.1",
+    "protractor": "^4.0.9"
+  },
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1 ./app",
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js --single-run"
+  },
+  "dependencies": {
+  }
+}

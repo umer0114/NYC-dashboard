@@ -1,0 +1,19 @@
+<div class="input-group">
+  <input type="text"
+         class="form-control col-sm-4 margin-24 height-42"
+         placeholder="Please enter station name"
+         ng-model="stationName"
+  />
+  <button type="button"
+          class="btn btn-primary col-sm-2 margin-24 height-42"
+          ng-click="findStation()">Find</button>
+
+  <button type="button"
+          class="btn btn-primary col-sm-2 margin-24 height-42"
+          ng-click="resetMarkers()">Reset</button>
+</div>
+<div>
+  <canvas id="base" class="chart-bubble" chart-data="data" chart-labels="chartLabels" chart-options="options"
+          chart-series="series" >
+  </canvas>
+</div>

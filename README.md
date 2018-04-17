@@ -32,3 +32,11 @@ npm start
 ```
 
 Now browse to the app at [`localhost:8000/`].
+
+### Test the application
+
+* The application accompanies the necessary unit tests. To execute the unit-tests, run the following command.
+
+```
+npm test
+```

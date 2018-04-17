@@ -10,9 +10,13 @@ module.exports = function (config) {
             'bower_components/angular-mocks/angular-mocks.js',
             'bower_components/chart.js/dist/Chart.min.js',
             'bower_components/angular-chart.js/dist/angular-chart.min.js',
-            'bower_components/angular-bootstrap//ui-bootstrap.min.js',
+            'bower_components/angular-bootstrap/ui-bootstrap.min.js',
+            'bower_components/lodash/lodash.js',
+            'bower_components/ngmap/build/scripts/ng-map.min.js',
             'bower_components/ngmap/build/scripts/ng-map.min.js',
             'app.js',
+            'route.js',
+            'sharedService.js',
             'view*/**/*.js'
         ],
 

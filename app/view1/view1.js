@@ -32,7 +32,7 @@ angular.module('dashboard')
             sourceValue.last_reported = new Date(sourceValue.last_reported * 1000);
             return _.extend(objValue, sourceValue);
         }
-        function init() {
+        $scope.init = function() {
             if (!myAppSharedService.getProperty('data')) {
                 $scope.isLoading = true;
                 $q.all([getStationInformation(), getStationStatus()]).then(function (response) {
@@ -47,7 +47,7 @@ angular.module('dashboard')
                 $scope.isLoading = false;
                 $scope.data = myAppSharedService.getProperty('data');
             }
-        }
+        };
 
         function getMarker() {
             var markerIndex =_.findIndex($scope.data, { 'name': $scope.stationName });
@@ -87,5 +87,5 @@ angular.module('dashboard')
 
 
         };
-        init();
+        $scope.init();
     });

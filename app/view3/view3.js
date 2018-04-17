@@ -37,7 +37,7 @@ angular.module('dashboard')
             }
         };
 
-        function init() {
+        $scope.init = function() {
             if (myAppSharedService.getProperty('data')) {
                 $scope.labels = [];
                 populateGraph();
@@ -45,5 +45,5 @@ angular.module('dashboard')
                 $location.path('/view1');
             }
         }
-        init();
+        $scope.init();
     });

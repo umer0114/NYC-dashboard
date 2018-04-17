@@ -34,7 +34,7 @@ angular.module('dashboard')
         $scope.resetMarkers = function () {
             populateGraph();
         };
-        function init() {
+        $scope.init = function() {
             if (myAppSharedService.getProperty('data')) {
                 $scope.options = {
                     scales: {
@@ -57,5 +57,5 @@ angular.module('dashboard')
                 $location.path('/view1');
             }
         }
-        init();
+        $scope.init();
     });
